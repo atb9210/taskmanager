@@ -4,4 +4,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="script.js"></script>
 </body>
+<footer class="text-center mt-5">
+  <p>&copy; 2024 Task Manager</p>
+</footer>
+
 </html>

@@ -27,17 +27,17 @@ function loadTasks() {
                 const li = document.createElement('li');
                 li.className = 'list-group-item d-flex justify-content-between align-items-center';
                 li.textContent = task.task_name;
-
+            
                 const button = document.createElement('button');
                 button.className = 'btn btn-danger btn-sm';
                 button.textContent = 'Elimina';
                 button.onclick = function() {
                     deleteTask(task.id);
                 };
-
+            
                 li.appendChild(button);
                 taskList.appendChild(li);
-            });
+            });            
         });
 }
 

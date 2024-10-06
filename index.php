@@ -2,15 +2,21 @@
 include 'includes/header.php';
 ?>
 
-<h2>Task Manager</h2>
-<form id="taskForm">
-    <div class="form-group">
-        <input type="text" id="taskInput" class="form-control" placeholder="Aggiungi una nuova task" required>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <h1 class="text-center">Task Manager</h1>
+      <form id="taskForm" class="form-control">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" id="taskInput" placeholder="Inserisci una task">
+          <button class="btn btn-primary" type="submit">Aggiungi Task</button>
+        </div>
+      </form>
+      <ul id="taskList" class="list-group"></ul>
     </div>
-    <button type="submit" class="btn btn-primary">Aggiungi Task</button>
-</form>
+  </div>
+</div>
 
-<ul id="taskList" class="list-group mt-4"></ul>
 
 <?php
 include 'includes/footer.php';
